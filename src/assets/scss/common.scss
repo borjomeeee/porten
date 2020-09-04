@@ -23,6 +23,17 @@
     }
   }
 
+  &__title {
+    color: $default-white;
+
+    font-family: $snazzyFont;
+    font-weight: bold;
+
+    font-size: 36px;
+
+    text-transform: uppercase;
+  }
+
   &__separator {
     width: 120px;
     height: 1px;

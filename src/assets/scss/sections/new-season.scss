@@ -22,17 +22,6 @@
     align-items: center;
   }
 
-  &__title {
-    color: $default-white;
-
-    font-family: $snazzyFont;
-    font-weight: bold;
-
-    font-size: 36px;
-
-    text-transform: uppercase;
-  }
-
   &__separator {
     margin: 50px 0;
   }
@@ -57,15 +46,6 @@
 
     align-items: center;
     justify-content: center;
-  }
-
-  &__picture-title {
-    font-family: $snazzyFont;
-    font-weight: bold;
-
-    font-size: 36px;
-
-    color: $default-white;
   }
 
   &__picture-separator {
