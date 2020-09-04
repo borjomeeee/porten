@@ -35,11 +35,6 @@
 
   &__separator {
     margin: 50px 0;
-
-    width: 120px;
-    height: 1px;
-
-    background-color: $default-white;
   }
 
   &__products-list {
@@ -49,39 +44,6 @@
     column-gap: 50px;
 
     padding: 0 80px;
-  }
-
-  .product-item {
-    &__image-container {
-      min-width: 260px;
-      padding: 55px 22px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background-color: $news-black;
-    }
-
-    &__label {
-      margin-top: 25px;
-
-      font-family: $snazzyFont;
-      font-size: 18px;
-
-      color: $default-white;
-    }
-
-    &__price {
-      margin-top: 10px;
-
-      font-family: $snazzyFont;
-      font-weight: bold;
-
-      font-size: 16px;
-
-      color: $light-gray;
-    }
   }
 
   &__picture {
