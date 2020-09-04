@@ -65,4 +65,7 @@ li {
 
 // Modules:
 // example: @import "modules/my-module.scss";
-@import "./sections/first-screen.scss"
+@import "./common.scss";
+
+@import "./sections/first-screen.scss";
+@import "./sections/new-season.scss";

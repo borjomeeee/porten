@@ -34,16 +34,30 @@
   font-family: 'Post No Bills Jaffna';
   font-style: normal;
   font-weight: normal;
-  src: 
-    url('../fonts/Post_no_bills/PostNoBillsJaffna-Regular.woff') format('woff');
+  src: url('../fonts/Post_no_bills/PostNoBillsJaffna-Regular.woff')
+    format('woff');
 }
 
 @font-face {
   font-family: 'Post No Bills Jaffna';
   font-style: normal;
   font-weight: bold;
-  src: 
-    url('../fonts/Post_no_bills/PostNoBillsJaffna-Bold.woff') format('woff');
+  src: url('../fonts/Post_no_bills/PostNoBillsJaffna-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf') format('truetype');
 }
 
 // 2. Example with mixin (example):
