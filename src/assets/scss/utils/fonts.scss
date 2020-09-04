@@ -1,28 +1,50 @@
-/* Fonts:
-  https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
-  ========================================================================== */
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PT_Sans/PTSans-Regular.ttf') format('truetype'); // IE9 Compat Modes
 
-@import 'mixins';
+  font-style: normal;
+  font-weight: normal;
+}
 
-/*
-  One of the ways:
-  1. handle method,
-  2. use mixin;
-*/
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PT_Sans/PTSans-Bold.ttf') format('truetype'); // IE9 Compat Modes
 
-// 1. Example handle method (without mixin):
+  font-style: normal;
+  font-weight: bold;
+}
 
-/*
-  // Base Helvetica (example):
-  @font-face {
-    font-family: "Helvetica-Base";
-    src: url('/assets/fonts/Helvetica/Base/Helvetica-Base.eot'); // IE9 Compat Modes
-    src: url('/assets/fonts/Helvetica/Base/Helvetica-Base.eot?#iefix') format('embedded-opentype'), // IE6-IE8
-         url('/assets/fonts/Helvetica/Base/Helvetica-Base.woff') format('woff'), // Pretty Modern Browsers
-         url('/assets/fonts/Helvetica/Base/Helvetica-Base.ttf')  format('truetype'), // Safari, Android, iOS
-         url('/assets/fonts/Helvetica/Base/Helvetica-Base.svg') format('svg'); // Legacy iOS
-  }
-*/
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PT_Sans/PTSans-BoldItalic.ttf') format('truetype'); // IE9 Compat Modes
+
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PT_Sans/PTSans-Italic.ttf') format('truetype'); // IE9 Compat Modes
+
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Post No Bills Jaffna';
+  font-style: normal;
+  font-weight: normal;
+  src: 
+    url('../fonts/Post_no_bills/PostNoBillsJaffna-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Post No Bills Jaffna';
+  font-style: normal;
+  font-weight: bold;
+  src: 
+    url('../fonts/Post_no_bills/PostNoBillsJaffna-Bold.woff') format('woff');
+}
 
 // 2. Example with mixin (example):
 
