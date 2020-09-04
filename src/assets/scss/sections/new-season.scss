@@ -1,6 +1,6 @@
 .new-season {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(auto, 1fr) minmax(auto, 880px);
 
   &__products,
   &__picture {
@@ -53,6 +53,7 @@
 
   .product-item {
     &__image-container {
+      min-width: 260px;
       padding: 55px 22px;
 
       display: flex;
@@ -84,7 +85,7 @@
   }
 
   &__picture {
-    background: url("../img/new-season-bg.png") center center no-repeat;
+    background: url("../img/new-season-bg.png") left top no-repeat;
     background-size: cover;
   }
 
