@@ -1,0 +1,111 @@
+.footer {
+  background: url('../img/footer-bg.png') center center no-repeat;
+  background-size: cover;
+
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+  }
+
+  &__title {
+    font-family: $snazzyFont;
+    font-size: 24px;
+
+    text-transform: uppercase;
+    color: $default-white;
+  }
+
+  &__col-content {
+    margin-top: 40px;
+  }
+
+  &__descr {
+    color: $default-white;
+  }
+
+  &__categories-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__category-item {
+    padding: 10px 20px;
+
+    background-color: $medium-black;
+    color: $light-gray;
+
+    line-height: 150%;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    margin-top: 37px;
+
+    display: flex;
+  }
+
+  &__form-input {
+    width: 100%;
+
+    background-color: $footer-input-bg;
+    color: $default-gray;
+
+    padding: 10px 15px;
+
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: $default-gray;
+    }
+  }
+
+  &__form-submit {
+    padding: 10px 20px;
+
+    background-color: $medium-black;
+    color: $default-white;
+
+    line-height: 150%;
+    letter-spacing: 0.05em;
+
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .bottom-line {
+    height: 50px;
+
+    background-color: $medium-black;
+
+    &__container {
+      height: 100%;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__copy {
+      font-size: 12px;
+      color: $light-gray;
+    }
+
+    &__descr {
+      font-weight: bold;
+      font-size: 12px;
+
+      color: $light-gray;
+
+      text-decoration: underline;
+    }
+  }
+}

@@ -4,6 +4,10 @@
 @import 'utils/fonts';
 @import 'utils/reset';
 
+* {
+  font-family: $mainFont;
+}
+
 html {
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
@@ -65,10 +69,11 @@ li {
 
 // Modules:
 // example: @import "modules/my-module.scss";
-@import "./common.scss";
+@import './common.scss';
 
-@import "./sections/first-screen.scss";
-@import "./sections/new-season.scss";
-@import "./sections/new-collection.scss";
-@import "./sections/new-products.scss";
-@import "./sections/brands.scss";
+@import './sections/first-screen.scss';
+@import './sections/new-season.scss';
+@import './sections/new-collection.scss';
+@import './sections/new-products.scss';
+@import './sections/brands.scss';
+@import './sections/footer.scss';
