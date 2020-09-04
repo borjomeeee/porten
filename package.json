@@ -1,7 +1,7 @@
 {
-  "name": "webpacktemplate",
+  "name": "porten",
   "version": "1.0.0",
-  "description": "My template",
+  "description": "porten web template",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
@@ -11,7 +11,7 @@
     "> 1%",
     "last 3 version"
   ],
-  "author": "https://github.com/vedees",
+  "author": "https://github.com/borjomeeee",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vedees/webpack-template.git"
@@ -25,8 +25,7 @@
     "merge",
     "bable",
     "bable7",
-    "scss",
-    "vue"
+    "scss"
   ],
   "license": "MIT",
   "devDependencies": {
