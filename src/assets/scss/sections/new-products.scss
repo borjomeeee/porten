@@ -1,0 +1,40 @@
+.new-products {
+  padding-top: 120px;
+  padding-bottom: 150px;
+
+  background-color: $default-black;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: 'Playfair Display';
+    font-weight: bold;
+
+    font-size: 36px;
+
+    color: $default-white;
+    text-transform: uppercase;
+  }
+
+  &__separator {
+    margin: 40px 0px;
+  }
+
+  &__products-list {
+    margin-top: 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+
+    column-gap: 24px;
+    row-gap: 40px;
+  }
+}
