@@ -3,11 +3,13 @@
   grid-template-columns: minmax(auto, 880px) minmax(auto, 1fr);
 
   &__picture {
-    background: url('../img/new-collection-bg.png') left top no-repeat;
+    background: url('../img/new-collection-bg.png') center top no-repeat;
     background-size: cover;
   }
 
   &__info {
+    min-width: 1040px;
+
     padding: 93px 0px;
 
     background-color: $default-black;
