@@ -83,7 +83,7 @@
       color: $default-gray;
     }
 
-    &__nav-item {
+    &__nav-link {
       display: flex;
       &:hover {
         color: $default-white;
@@ -91,7 +91,7 @@
       }
     }
 
-    &__nav-link {
+    &__nav-item {
       padding: 31px 20px;
       text-transform: uppercase;
     }
