@@ -54,6 +54,7 @@ li {
   position: relative;
   margin: 0 auto;
   max-width: $desktopWidth;
+  padding: 0 30px;
   @media screen and (max-width: $smDesktopWidth) {
     max-width: $tableWidth;
   }
@@ -75,3 +76,6 @@ li {
 @import './sections/new-products.scss';
 @import './sections/brands.scss';
 @import './sections/footer.scss';
+
+// Media
+@import "./media.scss";
