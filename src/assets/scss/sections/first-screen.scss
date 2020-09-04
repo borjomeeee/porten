@@ -1,106 +1,190 @@
 .first-screen {
-    .topline {
-        padding: 14px 0px;
+  .topline {
+    padding: 14px 0px;
 
-        background-color: $default-black;
-        color: $default-gray;
+    background-color: $default-black;
+    color: $default-gray;
 
-        font-size: 12px;
-        line-height: 16px;
+    font-size: 12px;
+    line-height: 16px;
 
-        &__container {
-            display: flex;
-            flex-direction: row;
-    
-            justify-content: space-between;
-        }
+    &__container {
+      display: flex;
+      flex-direction: row;
 
-        &__features,
-        &__auth {
-            display: flex;
-            flex-direction: row;
-
-            align-items: center;
-        }
-
-        &__features-icon,
-        &__auth-icon {
-            margin-right: 16px;
-        }
-
-        &__feature-item:not(:last-child)::after {
-            display: inline;
-            content: "|";
-
-            padding: 0 13px;
-        }
-
-        &__auth-link {
-            color: $default-gray;
-
-            &:hover {
-                color: $default-white;
-                text-decoration: underline;
-            }
-        }
+      justify-content: space-between;
     }
 
-    .header {
-        width: 100%;
-        height: 80px;
+    &__features,
+    &__auth {
+      display: flex;
+      flex-direction: row;
 
-        background-color: $medium-black;
-
-        &__container {
-            display: flex;
-            flex-direction: row;
-
-            height: 100%;
-
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        &__logo {
-            font-family: $logoFont;
-            font-weight: bold;
-
-            font-size: 36px;
-            color: $default-white;
-        }
-
-        &__right-container {
-            display: flex;
-            height: 100%;
-
-            align-items: center;
-        }
-
-        &__nav {
-            display: flex;
-            height: 100%;
-
-            color: $default-gray;
-        }
-
-        &__nav-item {
-            display: flex;
-            &:hover {
-                color: $default-white;
-                background-color: $light-black;
-            }
-        }
-
-        &__nav-link {
-            padding: 31px 20px;
-        }
-
-        &__actions-icons {
-            margin-left: 20px;            
-        }
-
-        &__actions-link:not(:last-child) {
-            margin-right: 40px;
-        }
+      align-items: center;
     }
+
+    &__features-icon,
+    &__auth-icon {
+      margin-right: 16px;
+    }
+
+    &__feature-item:not(:last-child)::after {
+      display: inline;
+      content: '|';
+
+      padding: 0 13px;
+    }
+
+    &__auth-link {
+      color: $default-gray;
+
+      &:hover {
+        color: $default-white;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .header {
+    width: 100%;
+    height: 80px;
+
+    background-color: $medium-black;
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+
+      height: 100%;
+
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      font-family: $logoFont;
+      font-weight: bold;
+
+      font-size: 36px;
+      color: $default-white;
+    }
+
+    &__right-container {
+      display: flex;
+      height: 100%;
+
+      align-items: center;
+    }
+
+    &__nav {
+      display: flex;
+      height: 100%;
+
+      color: $default-gray;
+    }
+
+    &__nav-item {
+      display: flex;
+      &:hover {
+        color: $default-white;
+        background-color: $light-black;
+      }
+    }
+
+    &__nav-link {
+      padding: 31px 20px;
+      text-transform: uppercase;
+    }
+
+    &__actions-icons {
+      display: flex;
+      margin-left: 20px;
+    }
+
+    &__actions-item {
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  .landing-face {
+    min-height: 810px;
+
+    background: url('../img/landing-face-bg.png') center center no-repeat;
+    background-size: cover;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+    }
+
+    &__logo {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 160px;
+      padding: 93px 67px;
+
+      border: 4px solid $default-white;
+    }
+
+    &__logo-title {
+      position: relative;
+
+      font-family: $logoFont;
+      font-weight: bold;
+
+      font-size: 64px;
+      line-height: 96px;
+
+      color: $default-white;
+
+      &::after {
+        content: "";
+        display: block;
+
+        position: absolute;
+
+        bottom: 4px;
+        right: 0;
+        left: 0;
+
+        height: 2px;
+        background-color: $default-white;
+      }
+    }
+
+    &__logo-subtitle {
+      margin-top: 3px;
+
+      font-size: 22px;
+      line-height: 28px;
+
+      text-transform: uppercase;
+
+      color: $default-white;
+    }
+
+    &__text {
+      margin-top: 80px;
+
+      max-width: 730px;
+
+      font-size: 16px;
+      line-height: 150%;
+      
+      color: $default-white;
+
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
 }
