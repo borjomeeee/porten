@@ -61,6 +61,25 @@
       justify-content: space-between;
     }
 
+    &__menu-icon {
+      display: none;
+      
+      margin-right: 25px;
+
+      font-size: 24px;
+
+      color: $default-gray;
+
+      cursor: pointer;
+    }
+
+    &__logo-container {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+    }
+
     &__logo {
       font-family: $logoFont;
       font-weight: bold;

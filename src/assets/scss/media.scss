@@ -78,6 +78,10 @@
       &__nav {
         display: none;
       }
+
+      &__menu-icon {
+        display: block;
+      }
     }
 
     .topline {
@@ -153,16 +157,6 @@
     padding: 0 10px;
   }
 
-  .footer {
-    &__categories-list {
-      display: block;
-    }
-
-    &__category-item {
-      text-align: center;
-    }
-  }
-
   .new-collection {
     &__button-container {
       display: flex;
@@ -179,6 +173,28 @@
     .landing-face {
       &__logo {
         padding: 63px 37px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $phoneWidth) {
+  .footer {
+    &__categories-list {
+      display: block;
+    }
+
+    &__category-item {
+      text-align: center;
+    }
+  }
+
+  .mobile-menu {
+    .topline {
+      display: block;
+
+      &__auth {
+        margin-top: 30px;
       }
     }
   }

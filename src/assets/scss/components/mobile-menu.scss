@@ -1,6 +1,87 @@
 .mobile-menu {
   display: none;
 
+  position: fixed;
+
+  padding: 20px;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 100vh;
+  max-height: 100vh;
+
+  color: $default-gray;
+  background-color: $medium-black;
+
+  z-index: $menu;
+
+  &_opened {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  &__close {
+    color: $default-gray;
+    font-size: 24px;
+
+    display: inline;
+    margin-left: auto;
+
+    cursor: pointer;
+  }
+
   .topline {
+    display: flex;
+    justify-content: space-around;
+
+    &__features,
+    &__auth {
+      display: flex;
+      flex-direction: row;
+
+      align-items: flex-start;
+    }
+
+    &__features-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__features-icon,
+    &__auth-icon {
+      margin-right: 16px;
+    }
+
+    &__auth-link {
+      color: $default-gray;
+
+      &:hover {
+        color: $default-white;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__nav {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__nav-link {
+    padding: 15px 30px;
+
+    &:hover {
+      color: $default-white;
+      background-color: $light-black;
+    }
   }
 }
