@@ -1,6 +1,6 @@
-@import 'utils/vars';
-@import 'utils/fonts';
-@import 'utils/reset';
+@import './utils/vars.scss';
+@import './utils/fonts.scss';
+@import './utils/reset.scss';
 
 * {
   font-family: $mainFont;
@@ -76,6 +76,9 @@ li {
 @import './sections/new-products.scss';
 @import './sections/brands.scss';
 @import './sections/footer.scss';
+
+// Components
+@import "./components/mobile-menu.scss";
 
 // Media
 @import "./media.scss";
