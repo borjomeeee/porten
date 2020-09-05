@@ -15,6 +15,8 @@
   color: $default-gray;
   background-color: $medium-black;
 
+  animation: openMenu .4s;
+
   z-index: $menu;
 
   &_opened {
@@ -35,8 +37,11 @@
   }
 
   .topline {
-    display: flex;
-    justify-content: space-around;
+    margin-top: 50px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 50px;
 
     &__features,
     &__auth {
@@ -83,5 +88,13 @@
       color: $default-white;
       background-color: $light-black;
     }
+  }
+}
+
+@keyframes openMenu {
+  from {
+    transform: translateX(100%);
+  } to {
+    transform: translateX(0);
   }
 }

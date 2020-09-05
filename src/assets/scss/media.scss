@@ -198,4 +198,16 @@
       }
     }
   }
+
+  .first-screen {
+    .header {
+      &__actions-item {
+        cursor: pointer;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
 }
