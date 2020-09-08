@@ -22,7 +22,10 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new webpack.SourceMapDevToolPlugin({
       filename: '[file].map'
     })
-  ]
+  ],
+  output: {
+    publicPath: '/'
+  }
 })
 
 module.exports = new Promise((resolve, reject) => {
